@@ -1,0 +1,24 @@
+This script will scan all the pages of a given domain and produce a
+sitemap.xml file in the current directory, using the Last-Modified
+header of each page if one is sent. Only pages returning a Content-Type
+of text/html will be included.
+
+You must check your site for broken links before running the script, the
+recommended method is by using the W3C validator:
+
+http://validator.w3.org/checklink
+
+All of the packages required by this script should be installed by default
+if you have a standard copy of Perl 5 with libwww-perl, although you may
+need to install DateTime separately (there are Ubuntu/Debian packages
+available via the standard repositories).
+
+You may need to modify the path to Perl if you are running this script under
+Windows or FreeBSD.
+
+For details of any of the module function calls, see http://search.cpan.org
+for full documentation.
+
+Licensed under the MIT Licence - see the LICENCE file for full details.
+
+Any questions, please email info@pwaring.com.
